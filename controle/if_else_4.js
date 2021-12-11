@@ -1,13 +1,16 @@
-const hora = 23;
+const hora = 7;
 let saudacao;
 
-if (hora < 12) {
+if (hora >= 1 && hora <= 5) {
+    saudacao = 'Está de madrugada, vai dormir';
+} else if (hora < 12) {
     saudacao = 'Bom dia!';
+} else if (hora < 18) {
+    saudacao = 'Boa tarde!';
+} else if (hora < 22) {
+    saudacao = 'Boa noite!';
 } else {
-    if (hora < 18) {
-        saudacao = 'Boa tarde!';
-    } else {
-        saudacao = 'Boa noite!';
-    }
+    saudacao = 'Muito tarde!';
 }
+
 console.log(saudacao);
