@@ -15,7 +15,7 @@ for (let i = 1; i <= 3; i++) {
 for (let i = 1; i <= 3; i++) {
     let linha = '';
     for (let j = 1; j <= 3; j++) {
-        if (i !== j) { //se o i for estreitamente diferente de j
+        if (i !== j) { //se o i for estreitamente diferente de j não exibe no output
             linha += `[${i}, ${j}] `;
         }
     }
