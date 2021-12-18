@@ -1,7 +1,5 @@
 let nota = 8
 
-
-
 switch (Math.ceil(nota)) {
     case 10:
         console.log('A+');
