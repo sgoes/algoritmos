@@ -13,4 +13,4 @@ console.log(numeros.indexOf(4));
 console.log(numeros.indexOf(4, 4)); //existem dois valores 4 no array e então vou perguntar qual é o index deles
 
 const numeros2 = numeros.concat(7, 8, 9);
-console.log(numeros2); // oi gerado um novo array
+console.log(numeros2); // foi gerado um novo array
