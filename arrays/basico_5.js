@@ -13,7 +13,7 @@ const cliente = {
             'O que quiser y',
         ],
         arrayDeObjetos: [ //isto é um array de objetos
-            { marcaCarro: 'volvo' },
+            { marcaCarro: 'volvo', muitoProximo: true }, //o console.log retorna um objeto
             { modelo: 'xc60' },
             { fazAcontece: '20hrs_de_cod_por_semena' },
         ],
