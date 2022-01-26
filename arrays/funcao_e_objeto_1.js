@@ -1,31 +1,18 @@
-//vamos supor que quero três datas diferentes, esta forma literal de construir objetos não é mais recomendada, dada à repetição
-const d1 = {
-    dia: 09,
-    mes: 10,
-    ano: 2010,
-    exibir: function() {
-        return `${this.dia}/${this.mes}/${this.ano}`;
-    }
-};
+//de forma a evitar a repetição de objetos é possivel que atraves de uma uma função evitar esta redundância 
 
-const d2 = {
-    dia: 22,
-    mes: 11,
-    ano: 2023,
-    exibir: function() {
-        return `${this.dia}/${this.mes}/${this.ano}`;
-    }
-};
+function criarData(dia, mes, ano) {
+    return {
+        dia: dia,
+        mes: mes,
+        ano: ano,
+        exibir: function() { //tambem posso declarar a função na seguinte forma --> exibir(){} , ou seja, posso retirar o ": function", é uma simplificação
+            return `${this.dia}/${this.mes}/${this.ano}`;
+        }
+    };
+}
 
-const d3 = {
-    dia: 27,
-    mes: 03,
-    ano: 1991,
-    exibir: function() {
-        return `${this.dia}/${this.mes}/${this.ano}`;
-    }
-};
+const d1 = criarData(09, 10, 2010);
+const d2 = criarData(22, 11, 2023);
+const d3 = criarData(27, 03, 1991);
 
-console.log(d1.exibir());
-console.log(d2.exibir());
-console.log(d3.exibir());
+console.log(d1.exibir(), d2.exibir(), d3.exibir());
